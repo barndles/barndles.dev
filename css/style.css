@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(42, 41, 44);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(../images/squiggle.png);
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.2s;
+}
+a:hover {
+    color: rgb(211, 210, 219);
+}
+article {
+    border: 3px solid rgb(211, 210, 219);
+    border-radius: 10px;
+    background-color: rgb(61, 61, 65);
+    margin-top: 10px;
+    padding: 10px 30px 30px 30px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.header-bar {
+    width: 100%;
+    border: 3px solid rgb(211, 210, 219);
+    border-radius: 10px;
+    background-color: rgb(61, 61, 65);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.home {
+    font-size: 50px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px 5px 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+.item:hover {
+    background-color: rgb(88, 88, 93);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    border-radius: 15px;
+    background-color: rgb(61, 61, 65);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input[type="number"] {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 3px;
+    border-style: none;
+    border-left: solid 5px rgb(67, 200, 147);
+    background: #dddddd;
+    transition: background 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+input:focus[type="number"] {
+    background: #f4f4f4;
+    outline-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.description {
+    max-width: 50%;
+    justify-content: left;
+    padding: 1px 10px;
+    border-radius: 5px;
+    margin: 0px 0px 10px;
+    background: rgb(83, 83, 88);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-left: 5px solid rgb(67, 200, 147);
+    font: 16px 'Roboto', sans-serif;
+}
+.button {
+    padding: 0.5em 1em;
+    max-width: 50%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(67, 200, 147);
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font: 'Roboto', sans-serif;
+    color: rgb(42, 41, 44);
+}
+.button:hover {
+    background: rgb(103, 215, 170);
+}
+.button:active {
+    background: rgb(164, 231, 204);
+}
