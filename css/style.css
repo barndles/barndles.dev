@@ -6,6 +6,12 @@ body {
     margin-right: 10%;
     background-image: url(../images/squiggle.png);
 }
+.icon {
+    overflow: hidden;
+    margin: -4px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 a {
     color: white;
     text-decoration: none;
@@ -119,8 +125,11 @@ input::-webkit-inner-spin-button {
     font: 16px 'Roboto', sans-serif;
 }
 .button {
+    font-weight: bolder;
+    font-size: 12pt;
     padding: 0.5em 1em;
-    max-width: 50%;
+    margin-right: 5px;
+    max-width: 100%;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -129,11 +138,80 @@ input::-webkit-inner-spin-button {
     transition: background 0.2s;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     font: 'Roboto', sans-serif;
-    color: rgb(42, 41, 44);
+    color: rgb(57, 56, 59);
 }
 .button:hover {
     background: rgb(103, 215, 170);
 }
 .button:active {
     background: rgb(164, 231, 204);
+}
+.stop {
+    background: rgb(222, 61, 61);
+}
+.stop:hover {
+    background: rgb(237, 94, 94);
+}
+.stop:active {
+    background: rgb(220, 135, 135);
+}
+.cancel {
+    background: rgb(222, 61, 61);
+}
+.cancel:hover {
+    background: rgb(237, 94, 94);
+}
+.cancel:active {
+    background: rgb(220, 135, 135);
+}
+.configure {
+    background: rgb(250, 198, 78);
+}
+.configure:hover {
+    background: rgb(253, 211, 115);
+}
+.configure:active {
+    background: rgb(254, 226, 161);
+}
+.customizer {
+    display: none;
+    padding-top: 10px;
+}
+.flexh {
+    display: flex;
+    justify-content: stretch;
+}
+.timer {
+    max-width: 50.25%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 1px;
+    border-radius: 5px;
+    margin: 10px 0px 10px;
+    background: rgb(83, 83, 88);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font: 80px 'Roboto', sans-serif;
+}
+.state {
+    font: 20px 'Roboto', sans-serif;
+}
+
+.flash {
+    animation-duration: 1.065s;
+    animation-iteration-count: infinite;
+    animation-name: flash;
+}
+@keyframes flash {
+    0% {
+        background: rgb(67, 200, 147);
+    }
+    50% {
+        background: rgb(83, 83, 88);
+    }
+    50.1% {
+        background: rgb(67, 200, 147);
+    }
+    100% {
+        background: rgb(83, 83, 88);
+    }
 }
